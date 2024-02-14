@@ -12,12 +12,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Configure and build
+      run: |
+        mkdir build
+        cd build
+        cmake ..
+        make
+        # You may need additional steps depending on your project setup
+        
+    - name: Run tests
+      run: |
+        cd build
+        ctest --output-on-failure
