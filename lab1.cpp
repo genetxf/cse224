@@ -1,17 +1,27 @@
 #include <iostream>
+#include <string>
 
-class MyClass {
+using namespace std;
+
+class Employee {
+protected:
+    string phone;
+
 public:
-    // Default constructor
-    MyClass() {
-        std::cout << "Default constructor called" << std::endl;
+    int employeeID;
+    string name;
+    string address;
+
+    Employee() { // default constructor
+        cout << "Default Constructor is called" << endl;
     }
 
+    ~Employee() { // destructor
+        cout << "Destructor is called" << endl;
+    }
 };
 
 int main() {
-    // Creating an object of MyClass using the default constructor
-    MyClass obj;
-
+    Employee emp;
     return 0;
 }
