@@ -1,4 +1,7 @@
 /Users/woliul/CLionProjects/cse224/cmake-build-debug/CMakeFiles/cse224.dir
 /Users/woliul/CLionProjects/cse224/cmake-build-debug/CMakeFiles/lab1.dir
+/Users/woliul/CLionProjects/cse224/cmake-build-debug/CMakeFiles/lab2.dir
+/Users/woliul/CLionProjects/cse224/cmake-build-debug/CMakeFiles/lab3.dir
+/Users/woliul/CLionProjects/cse224/cmake-build-debug/CMakeFiles/lab4.dir
 /Users/woliul/CLionProjects/cse224/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/woliul/CLionProjects/cse224/cmake-build-debug/CMakeFiles/rebuild_cache.dir
