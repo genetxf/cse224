@@ -3,7 +3,9 @@ using namespace std;
 
 class Bank {
 public:
-    virtual double interestRate() const = 0; // Pure virtual function for interest rate
+    virtual double interestRate() const {
+        return 0.0; // Default implementation, returning 0.0
+    }
 };
 
 class SonaliBank : public Bank {
