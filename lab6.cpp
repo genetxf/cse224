@@ -82,14 +82,14 @@ int main() {
 
     // Display result
     std::cout << " Basic Money: BDT " << global_principal <<
-                    "\n Interest rate: " << interest << "%"
-                    "\n Years: " << global_period <<
-                    "\n Deposit: BDT " << global_deposits <<
-                    "\n Withdraw: BDT " << global_withdraw <<
-                    "\n Fees: BDT " << global_fees <<
-                    "\n Tax rate: BDT " << taxrate << "%"
-                    "\n -----------------------------------"
-                    "\n Total amount of money: BDT " << total << std::endl;
+              "\n Interest rate: " << interest << "%"
+              "\n Years: " << global_period <<
+              "\n Deposit: BDT " << global_deposits <<
+              "\n Withdraw: BDT " << global_withdraw <<
+              "\n Fees: BDT " << global_fees <<
+              "\n Tax rate: " << taxrate << "%"
+              "\n -----------------------------------"
+              "\n Total amount of money: BDT " << total << std::endl;
 
     return 0;
 }
