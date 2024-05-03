@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 // Global variables for other parameters
 double global_principal;
@@ -27,13 +28,25 @@ public:
     // Calculate total
 
     double total() {
-        // Assuming interest is compounded annually
-        double total = global_principal;
 
-        //total with interest
-        for (int i = 0; i < global_period; ++i) {
-            total += total * global_rate;
-        }
+        /*  Formula for interest calculation
+            1. Compounded interest formula A = P * (1 + r)^n
+            2. Simple interest formula: A = P * (1 + r * n)
+
+            Where:
+            A is the total amount (principal + interest)
+            P is the principal amount (the initial amount of money)
+            r is the annual interest rate (in decimal)
+            n is the number of years the money is invested for
+         */
+
+        //total with compounded interest
+        double total = global_principal * pow((1 + global_rate), global_period);
+
+        // total with simple interest
+        //double total = global_principal * (1 + global_rate * global_period);
+
+
 
         total += global_deposits; //Add deposits
         total -= global_withdraw; //Deduct withdraw
@@ -50,27 +63,26 @@ int main() {
     Bank account(global_rate, global_period, global_principal, global_deposits, global_withdraw, global_fees,
                  global_tax);
 
-    //interest rate calculation
-    global_rate = interest/100;
-    //tax rate calculation
-    global_tax = taxrate/100;
-
     //input account info
-    global_principal = 1000.0;
-    interest = 5;
-    global_period = 3;
-    global_deposits = 1000.0;
-    global_withdraw = 500.0;
-    global_fees = 50.0;
-    taxrate = 2;
+    global_principal = 100.0;
+    interest = 10;
+    global_period = 2;
+    global_deposits = 000.0;
+    global_withdraw = 00.0;
+    global_fees = 0.0;
+    taxrate = 0;
+
+    //interest rate calculation
+    global_rate = interest / 100;
+    //tax rate calculation
+    global_tax = taxrate / 100;
 
     //Calculate total amount of money
     double total = account.total();
 
     // Display result
-    std::cout << "Total amount of money after " << global_period << " years with " << interest << "% interest rate is: $" << total << std::endl;
+    std::cout << "Total amount of money after " << global_period << " years with " << interest
+              << "% interest rate is: $" << total << std::endl;
 
     return 0;
 }
-
-
