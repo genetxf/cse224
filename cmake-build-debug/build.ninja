@@ -55,12 +55,6 @@ build CMakeFiles/cse224.dir/main.cpp.o: CXX_COMPILER__cse224_unscanned_Debug /Us
   OBJECT_DIR = CMakeFiles/cse224.dir
   OBJECT_FILE_DIR = CMakeFiles/cse224.dir
 
-build CMakeFiles/cse224.dir/lab6.cpp.o: CXX_COMPILER__cse224_unscanned_Debug /Users/woliul/CLionProjects/cse224/lab6.cpp || cmake_object_order_depends_target_cse224
-  DEP_FILE = CMakeFiles/cse224.dir/lab6.cpp.o.d
-  FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/cse224.dir
-  OBJECT_FILE_DIR = CMakeFiles/cse224.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cse224
@@ -69,7 +63,7 @@ build CMakeFiles/cse224.dir/lab6.cpp.o: CXX_COMPILER__cse224_unscanned_Debug /Us
 #############################################
 # Link the executable cse224
 
-build cse224: CXX_EXECUTABLE_LINKER__cse224_Debug CMakeFiles/cse224.dir/main.cpp.o CMakeFiles/cse224.dir/lab6.cpp.o
+build cse224: CXX_EXECUTABLE_LINKER__cse224_Debug CMakeFiles/cse224.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
   OBJECT_DIR = CMakeFiles/cse224.dir
   POST_BUILD = :
