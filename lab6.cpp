@@ -64,13 +64,13 @@ int main() {
                  global_tax);
 
     //input account info
-    global_principal = 100.0;
+    global_principal = 1000.0;
     interest = 10;
-    global_period = 2;
-    global_deposits = 000.0;
-    global_withdraw = 00.0;
-    global_fees = 0.0;
-    taxrate = 0;
+    global_period = 3;
+    global_deposits = 1000.0;
+    global_withdraw = 500.0;
+    global_fees = 50.0;
+    taxrate = 5;
 
     //interest rate calculation
     global_rate = interest / 100;
@@ -81,8 +81,15 @@ int main() {
     double total = account.total();
 
     // Display result
-    std::cout << "Total amount of money after " << global_period << " years with " << interest
-              << "% interest rate is: $" << total << std::endl;
+    std::cout << " Basic Money: BDT " << global_principal <<
+                    "\n Interest rate: " << interest << "%"
+                    "\n Years: " << global_period <<
+                    "\n Deposit: BDT " << global_deposits <<
+                    "\n Withdraw: BDT " << global_withdraw <<
+                    "\n Fees: BDT " << global_fees <<
+                    "\n Tax rate: BDT " << taxrate << "%"
+                    "\n -----------------------------------"
+                    "\n Total amount of money: BDT " << total << std::endl;
 
     return 0;
 }
