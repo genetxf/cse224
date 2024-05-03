@@ -88,7 +88,7 @@ int main() {
               "\n Withdraw: BDT " << global_withdraw <<
               "\n Fees: BDT " << global_fees <<
               "\n Tax rate: " << taxrate << "%"
-              "\n -----------------------------------"
+              "\n ----------------------------------"
               "\n Total amount of money: BDT " << total << std::endl;
 
     return 0;
